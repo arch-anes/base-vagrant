@@ -65,5 +65,6 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     curl -L https://raw.githubusercontent.com/arch-anes/dotfiles/master/install.sh | bash
+    sudo apt clean
   SHELL
 end
