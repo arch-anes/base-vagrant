@@ -1,0 +1,13 @@
+{
+    "name": "Vagrant base image",
+    "build": {
+        "dockerfile": "./Dockerfile",
+    },
+    "runArgs": [
+        "--privileged"
+    ],
+    "remoteUser": "vscode",
+    "extensions": [
+        "visualstudioexptteam.vscodeintellicode",
+    ]
+}
